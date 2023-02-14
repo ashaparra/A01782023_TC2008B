@@ -80,10 +80,10 @@
 
 
 
-<!-- Sobre la materia -->
+<!-- Sobre la Materia -->
 ## Sobre la materia 
 
-## [![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
  El propósito de este bloque es aprender a implementa un sistema de software operacional en base a un reto.
     Algunos de los obejtivos que se buscan cumplir son: 
