@@ -35,10 +35,30 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Construcción de software y toma de decisiones</h3>
 
   <p align="center">
-    project_description
+    El propósito de este bloque es aprender a implementa un sistema de software operacional en base a un reto.
+    Algunos de los obejtivos que se buscan cumplir son: 
+      1. Adaptar metodologías de desarrollo de
+         software de acuerdo a las necesidades 
+         de un equipo de trabajo bajo estándares 
+         internacionales.
+      2. Definir requerimientos con base en estándares
+         internacionales describiendo las necesidades
+         que demanda el sistema.
+      3. Diseñar componentes de software, a partir de
+         requerimientos, con base en estándares
+          internacionales.
+      4. Desarrollar todos los componentes diseñados
+         de un sistema computacional, con base en
+         estándares internacionales.
+     5. Elaborar pruebas que validen el cumplimiento
+     de los requerimientos iniciales del sistema
+     computacional.
+     6. Implantar el software desarrollado en un
+        entorno de operación.
+ 
     <br />
     <a href="https://github.com/ashaparra/A01782023_TC2008B"><strong>Explore the docs »</strong></a>
     <br />
