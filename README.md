@@ -1,4 +1,4 @@
-# A01782023_TC2008B
+
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
 <!--
@@ -38,27 +38,6 @@
 <h3 align="center">Construcción de software y toma de decisiones</h3>
 
   <p align="center">
-    El propósito de este bloque es aprender a implementa un sistema de software operacional en base a un reto.
-    Algunos de los obejtivos que se buscan cumplir son: 
-      1. Adaptar metodologías de desarrollo de
-         software de acuerdo a las necesidades 
-         de un equipo de trabajo bajo estándares 
-         internacionales.
-      2. Definir requerimientos con base en estándares
-         internacionales describiendo las necesidades
-         que demanda el sistema.
-      3. Diseñar componentes de software, a partir de
-         requerimientos, con base en estándares
-          internacionales.
-      4. Desarrollar todos los componentes diseñados
-         de un sistema computacional, con base en
-         estándares internacionales.
-     5. Elaborar pruebas que validen el cumplimiento
-     de los requerimientos iniciales del sistema
-     computacional.
-     6. Implantar el software desarrollado en un
-        entorno de operación.
- 
     <br />
     <a href="https://github.com/ashaparra/A01782023_TC2008B"><strong>Explore the docs »</strong></a>
     <br />
@@ -101,13 +80,31 @@
 
 
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+<!-- Sobre la materia -->
+## Sobre la materia 
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
-
+ El propósito de este bloque es aprender a implementa un sistema de software operacional en base a un reto.
+    Algunos de los obejtivos que se buscan cumplir son: 
+      1. Adaptar metodologías de desarrollo de
+         software de acuerdo a las necesidades 
+         de un equipo de trabajo bajo estándares 
+         internacionales.
+      2. Definir requerimientos con base en estándares
+         internacionales describiendo las necesidades
+         que demanda el sistema.
+      3. Diseñar componentes de software, a partir de
+         requerimientos, con base en estándares
+          internacionales.
+      4. Desarrollar todos los componentes diseñados
+         de un sistema computacional, con base en
+         estándares internacionales.
+     5. Elaborar pruebas que validen el cumplimiento
+     de los requerimientos iniciales del sistema
+     computacional.
+     6. Implantar el software desarrollado en un
+        entorno de operación.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
