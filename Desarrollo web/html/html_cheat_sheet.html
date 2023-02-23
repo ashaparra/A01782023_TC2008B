@@ -7,54 +7,255 @@
     <title>HTML cheat sheet</title>
 </head>
 <body>
+    <body style="background-color:lavender;">
     <h1>HTML cheat sheet</h1>
     <H2>Hyperlinks</H2>
     <p>Sirven para hacer un link de una página a otro recurso en la web, 
         sea otro archivo en el servidor web, u otra página web.</p>
 
-        <p>Por ejemplo: <a href="https://tinyurl.com/4wnrkkzx">
+        <p>Por ejemplo: <a style="color:rgb(191, 38, 191)" href="https://tinyurl.com/4wnrkkzx">
             El siguiente link muestra un video de c&oacute;mo funcionan los hyperlinks!</a></p>
     
     <!-- Niveles de Header -->
-    <h1>Header level 1</h1>
-    <h2>Header level 2</h2>
-    <h3>Header level 3</h3>
-    <h4>Header level 4</h4>
-    <h5>Header level 5</h5>
-    <h6>Header Level 6</h6>
+    <h2>Header</h2>
+    <p>The h1 to h6 elements represent six levels of section headings. h1 is 
+        the highest section level and h6 is the lowest.</p>
+    <h1 style="color:rgb(68,1,68)"> Header level 1</h1>
+    <h2 style="color:rgb(138,9,138)">Header level 2</h2>
+    <h3 style="color:rgb(160,0,160);">Header level 3</h3>
+    <h4 style="color:rgb(200, 9, 200)">Header level 4</h4>
+    <h5 style="color:magenta">Header level 5</h5>
+    <h6 style="color:rgb(253, 162, 253)">Header Level 6</h6>
+</p>
     <!-- Division  -->
     <div>
         <h2>Div</h2>
-    <p> the div HTML element is the generic container for flow 
+    <p> the div element is the generic container for flow 
         content. It has no effect on the content or layout until styled in some way using CSS</p>
 
-        <div>This is an example of div</div>
-
+        <div style="color:blueviolet"
+        >This is an example of div
+        </div>
+        
     </div>
     <!-- Span-->
     <Span>
         <h2>Span</h2>
-        <p>The <span>span</span> HTML element is a generic inline container for phrasing content, which does not inherently represent anything. 
-            It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang. 
-            It should be used only when no other semantic element is appropriate. SPAN is very much like a DIV element, but DIV is a block-level element whereas a SPAN is an inline element.
+        <p>The <span>span</span> element is a generic inline container for phrasing content,
+             which does not inherently represent anything.  It can be used to group elements for 
+             styling purposes (using the class or id attributes), or because they share attribute 
+             values, such as lang. It should be used only when no other semantic element is appropriate. 
         </p>
-        <span>This is an example of sapan</span>
+        <span style="color:blueviolet">This is an example of sapan</span>
+        <h2>Difference between Span and DIV</h2>   
+            SPAN is very much like a DIV element, but DIV is a block-level element whereas a SPAN is
+             an inline element. 
     </Span>
 <!-- Strong -->
 <h2>Strong</h2>
-<p>The <strong>strong</strong> HTML element indicates that its contents have strong importance, seriousness, or urgency. Browsers typically render the contents in bold type.</p>
-<p>This is an example of <strong>Strong.</strong></p>
+<p>The <strong>strong</strong> element indicates that its contents have strong importance, 
+    seriousness, or urgency. 
+</p>
+<p style="color:blueviolet">This is an example of <strong style="color:rgb(86, 25, 144)">Strong.</strong></p>
 <!-- Idiomatic Text Element-->
-<h2>i- The Idiomatic Text element</h2>
-<p>The <i>i</i> HTML element represents a range of text that is set off from the normal text for some reason, such as idiomatic text, technical terms, taxonomical designations,
- among others. Historically, these have been presented using italicized type, which is the original source of the <i>i</i> naming of this element.</p>
-<i>This is an example of i.</i>
+<h2>I- The Idiomatic Text element</h2>
+<p>The <i>i</i> element represents a range of text that is set off from the normal text for
+     some reason. 
+</p>
+<i style="color:blueviolet">This is an example of idiomatic text.</i>
 
 <!--u-The Unarticulated Annotation (Underline) element -->
+<H2>-U The Unarticulated Annotation</H2>
+<p>The <u>u</u> element represents a span of inline text which should be rendered in a way 
+that indicates that it has a non-textual annotation.
+</p>
+
+<U style="color:blueviolet">This sentence is using Unarticulated annotation</U>
+
+<!--b-->
+<h2>B- the bring attention element</h2>
+<p>The <b>b</b>  element is used to draw the reader's attention to the element's contents, 
+    which are not otherwise granted special importance. you should not use <b>b</b> for styling text 
+    or granting importance. </p>
+    <b style="color:rgb(86, 25, 144)">This element should be seen</b>
+
+<!--strike-->
+<h2>Strike</h2>
+<p>The <s>strike</s> HTML element places a strikethrough (horizontal line) over text.</p>
+    
+<p>Srtike is deprecated in HTML 4 and XHTML 1, and obsoleted in the HTML Living Standard. 
+        If semantically appropriate, use <del>del</del> instead. In all other cases use <s>s</s>.
+    </p>
+    <p style="color:rgb(86, 25, 144);"><s style="color:blueviolet">You sholud use Strike in HTML5</s> &nbsp USE S OR DEL</p>
+
+ <!--small-->
+ <h2>Small</h2>
+ <p>
+    The <small>small</small> element represents side-comments and small print, like copyright and legal text,
+     independent of its styled presentation. By default, it renders text within it one font-size smaller,
+      such as from small to x-small.
+ </p>
+ <p style="color:rgb(86, 25, 144)"><small style="color:blueviolet">This text is in a smaller font</small> than this one</p>
+
+ <!--em-->
+ <h2>Em- The Emphasis element</h2>
+ <p>
+    The <em>em</em> element marks text that has stress emphasis. The <em>em</em> element can be nested, with 
+        each level of nesting indicating a greater degree of emphasis.  
+ </p>
+<em style="color:blueviolet"><p>Becuase of the importance of this information, it needs to be emphazise</p></em>
+<!--Section-->
+<h2>Section</h2>
+<p>The section HTML element represents a generic standalone section of a document, which doesn't have a 
+    more specific semantic element to represent it.</p>
+
+<p>
+    <section style="color:blueviolet">This sentence has its own section </section>
+</p>
 
 
+<!--article-->
+<h2>Article</h2>
+<p>
+    The article element represents a self-contained composition in a document, 
+page, application, or site, which is intended to be independently distributable or reusable 
+</p> 
+<article style ="background:rgb(182, 139, 223); 
+padding:10x; border:50px solid blueviolet
+margin=10px ">
+ The articles are used for things like <br> 
+ a forum post, a magazine, newspaper article,
+ <br> or a blog entry
+</article>
 
+<!--aside-->
+<h2>Aside</h2>
+<p>The aside HTML element represents a portion of a document whose content is 
+only indirectly related to the document's main content. Asides are frequently presented 
+as sidebars or call-out boxes.
+</p>
+<aside style="width: 40%;
+padding-left: 0.5rem;
+margin-left: 0.5rem;
+float: right;
+box-shadow: inset 5px 0 5px -5px purple;
+font-style: italic;
+color: purple;">
+    This box represents the use of aside
+</aside>
+<br> 
+
+<!--nav-->
+<h2>Nav- The Navigation Section Elment</h2>
+<p>
+ The nav element represents a section of a page whose purpose is to provide navigation links,
+ either within the current document or to other documents. Common examples of navigation sections are menus,
+  tables of contents, and indexes.
+</p>
+<p>Example of nav:
+    <nav>
+        <a href="#"></a></li>
+        <li class="crumb"><a href="#top"> scroll to top </a></li>
+</nav>
+<!--img-->
+<h2>Img-The Image Embed element</h2>
+<p>
+    The img element embeds an image into the document.  
+</p>
+<img src="https://i.pinimg.com/originals/7c/e3/ff/7ce3ffef8231526180a4e86914e67cc9.jpg" alt="Purple lines" width="460" height="345">
+
+<!--br-->
+<h2>Br- The Line Break element</h2>
+<p>The br element produces a line break in text. It is commonly used in poems
+    <p style="color:blueviolet">This<br> text <br> is <br> be<br> separated <br> with <br> the <br>use<br> of <strong style="color:rgb(86, 25, 144)"><br>br</strong> </p>
+
+<!--hr-->
+<h2>Hr-The Thematic Break </h2>
+<p>
+    The hr element represents a thematic break between paragraph-level elements <strong style="color: blueviolet;">-> </strong>It creates a line like the following:
+</p>
+<hr>
+
+<!--form-->
+<h2>Form</h2>
+<p>
+    The form element represents a document section containing interactive controls for submitting information.
+</p>
+<form style="color:blueviolet">
+    <label for="first name">First name:</label><br>
+    <input type="text" id="fname" name="first name"><br>
+    <label for="last name">Last name:</label><br>
+    <input type="text" id="last name" name="last name">
+  </form>
+
+<!--table-->
+<h2>table</h2>
+<p>
+    The tableelement represents tabular data. Information presented in a 
+    two-dimensional table comprised of rows and columns.
+</p>
+<table style="border:1px solid purple;">
+    <thead style="background-color:blueviolet;">
+        <tr>
+            <th colspan="2">Table header</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="border:1px solid purple;">Row 1, Colum 1</td>
+            <td style="border:1px solid purple;">Row 1, Colum 2</td>
+        </tr>
+        <tr>
+            <td style="border:1px solid purple;">Row 2, column 1</td>
+            <td style="border:1px solid purple;">Row 2, Column 2</td>
+        </tr>
+
+    </tbody>
+</table>
+<!--ul-->
+<h2>Ul-The Unordered List element</h2>
+<p>
+    The ul element represents an unordered list of items <br>
+   <br><strong style="color:blueviolet">Example: Types of styles for lists</strong> 
+</p>
+<ul>
+    <li>circle
+        <ul>
+            <li style="list-style-type: square;">square</li>
+        </ul>
+    </li>
+    <li style="list-style-type:decimal;">decimal</li>
+    <li style="list-style-type:armenian;">armenian</li>
+    <li style="list-style-type:lower-greek;">greek</li>
+    <li style="list-style-type:lower-roman;">roman</li>
+    <li style="list-style-type:georgian;">georgian</li>
+    <li style="list-style-type:alpha;">alpha</li>
+
+</ul>
+<!--ol-->
+<h2>Ol-The Ordered List element</h2>
+<p>
+    The ol element represents an ordered list of items <strong style="color:blueviolet">-></strong> typically rendered as a numbered list <br>
+    <br>
+    <strong style="color:rgb(86, 25, 144)">Example:</strong>
+</p>
+<ol>
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+    <li>Four</li>
+    <li>Five</li>
+  </ol>
+<!--footer-->
+<h2>Footer</h2>
+ <p>A footer typically contains information about the author of the section, 
+    copyright data or links to related documents. It is located in the botom of the page</p>
+
+<footer style="display: flex; justify-content: center; padding: 5px;
+background-color:rgb(182, 139, 223);
+color: purple;">
+   <p>Source of information used in the creation of this document: Mozzila Contributers.(2010). HTML elements reference - HTML: Hypertext markup language: MDN. Retrieved February 22, 2023, from https://developer.mozilla.org/en-US/docs/Web/HTML/Element </p> 
+</footer>
 </body>
 </html>
 
-<!-- Fuente: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u -->
