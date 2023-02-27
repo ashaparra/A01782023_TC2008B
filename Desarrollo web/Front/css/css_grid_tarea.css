@@ -1,0 +1,92 @@
+*{
+    /* Como se van a ver los elementos en el view port->box-sizing */
+    box-sizing: border-box;
+}
+body,html{
+    margin:0;
+    padding:0;
+}
+#grid-layout1{
+    padding: 10px;
+    height: 100vh;
+    /* vh: view port height */
+    background-color: rgb(246, 212, 246);
+    display: grid;
+    /* grid-template-columns: 100px 200px 100px; */
+    /* grid-template-columns:repeat(3,1fr); */
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap:10px;
+}
+.grid-item1{
+    padding: 10px;
+    /* margin:10px; */
+}
+.grid-item1:nth-child(1){
+    background-color: rgb(220, 149, 220);
+    padding: 10px;
+}
+.grid-item1:nth-child(2){
+    background-color: rgb(149, 174, 220);
+    padding: 10px;
+}
+.grid-item1:nth-child(3){
+    background-color: rgb(149, 220, 211);
+    padding: 10px;
+}
+.grid-item1:nth-child(4){
+    background-color: rgb(187, 149, 220);
+    padding: 10px;
+}
+.grid-item1:nth-child(5){
+    background-color: rgb(163, 220, 149);
+    padding: 10px;
+}
+.grid-item1:nth-child(6){
+    background-color: rgb(220, 195, 149);
+    padding: 10px;
+}
+
+#grid-layout2{
+    padding: 10px;
+    height: 100vh;
+    /* vh: view port height */
+    background-color: rgb(246, 212, 246);
+    display: grid;
+    /* grid-template-columns: 100px 200px 100px; */
+    /* grid-template-columns:repeat(3,1fr); */
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap:10px;
+    grid-template-areas: "header header header" /* grid area: va a ocupar 3 espacios */
+}
+.grid-item2{
+    padding: 10px;
+    /* margin:10px; */
+}
+.grid-item2:nth-child(1){
+    background-color: rgb(220, 149, 220);
+    padding: 10px;
+}
+.grid-item2:nth-child(2){
+    background-color: rgb(149, 174, 220);
+    padding: 10px;
+}
+.grid-item2:nth-child(3){
+    background-color: rgb(149, 220, 211);
+    padding: 10px;
+}
+.grid-item2:nth-child(4){
+    background-color: rgb(187, 149, 220);
+    padding: 10px;
+}
+.grid-item2:nth-child(5){
+    background-color: rgb(163, 220, 149);
+    padding: 10px;
+}
+.grid-item2:nth-child(6){
+    background-color: rgb(220, 195, 149);
+    padding: 10px;
+}
+#grid-header2{
+}
