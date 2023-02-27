@@ -7,6 +7,17 @@ h4{
   color:plum;
   margin-bottom: .3em;
 }
+h5{
+    font-size: 1.7em;
+    color:rgb(172,95,172);;
+    margin-bottom: .3em;
+    margin-top: 10px;
+    text-align: center;
+  }
+h6{
+    font-size: 1em;
+    margin-top:1px;
+}
 .border{
     border: 1rem solid;
     text-align:center;
@@ -18,8 +29,49 @@ h4{
 .border-left{
     border-left: 4mm;
     border-left-style:ridge;
-    border-color: rgba(172,95,172,.6); 
+    border-color: rgba(239, 19, 239, 0.876); 
     margin: 15px;
     padding: 10px; 
+    color:rgba(239, 19, 239, 0.876);
+}
+.border-right{
+    border-right:thick double;
+    border-color: rgba(172,95,172,.6);
+    margin: 15px;
+    padding: 10px;
     color:rgba(119, 12, 119, 0.6)
 }
+
+.border-top{
+    border-top:3px;
+    border-top-style:dashed;
+    margin: 20px;
+    padding: 5px;
+    color:rgba(239, 19, 239, 0.876);
+}
+.border-bottom{
+    border-bottom:thick double;
+    border-bottom-style:solid;
+    margin: 15px;
+    padding: 10px;
+    color:rgba(119, 12, 119, 0.6)
+}
+
+.border-radious{
+    border: dashed;
+    border-radius:50px;
+    border-width: 2px 4px;
+    border-color:plum;
+    text-align: center;
+    color:purple
+}
+.background-image{
+    background-image: url("https://i.pinimg.com/originals/7c/e3/ff/7ce3ffef8231526180a4e86914e67cc9.jpg");
+    background-size:20px;
+    color:purple;
+}
+
+
+
+
+
