@@ -1,4 +1,25 @@
-.subtitles{
-    background:plum;
-    color:blueviolet;
+h1{
+    background-color: plum;
+    text-align: center;
+}
+h4{
+  font-size: 2em;
+  color:plum;
+  margin-bottom: .3em;
+}
+.border{
+    border: 1rem solid;
+    text-align:center;
+    color:rgb(172,95,172); 
+    margin: 15px;
+    padding: 10px; 
+}
+
+.border-left{
+    border-left: 4mm;
+    border-left-style:ridge;
+    border-color: rgba(172,95,172,.6); 
+    margin: 15px;
+    padding: 10px; 
+    color:rgba(119, 12, 119, 0.6)
 }
