@@ -1,0 +1,24 @@
+*{
+    box-sizing:border-box;
+}
+/* html,body{
+    margin: 0;
+    padding: 0;
+} */
+div{
+    border: 1px solid palevioletred;
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    /* Justfy y Align son los básicos */
+    justify-content: space-evenly;
+    align-content: flex-start;
+    /* flex-direction:row; */
+}
+.flex-item{
+    margin: 5%;
+    flex-shrink:4; 
+    /* Flex: Adapta al area disponible  */
+    flex-grow:2;
+}
