@@ -48,7 +48,7 @@ function bubblesort(bubble){
 
 // 3. Escribe dos funciones: la primera que invierta un arreglo de números y regrese un nuevo arreglo con el resultado; la segunda que modifique el mismo arreglo que se pasa como argumento. No se permite usar la función integrada 'reverse'.
  
-let arreglo=[1,2,3,4,5,6];
+let arreglo=[1,2,3,4,5,6,7];
 function invertir(arreglo){
     let nuevo=[];
     let array_length=arreglo.length;
@@ -58,7 +58,26 @@ function invertir(arreglo){
     return nuevo;
 
 }
-console.log(invertir(arreglo));
+console.log("Función 3: ");
+console.log("implementacion uno: ", invertir(arreglo));
+
+
+function invertir2(arreglo){
+    let array_length = arreglo.length;
+    let i = 0;
+    let j = array_length -1;
+    let temp;
+    while (i < j){
+        temp = arreglo[i];
+        arreglo[i]=arreglo[j];
+        arreglo[j]=temp;
+        i++;
+        j--;
+    }
+    return arreglo;
+}
+
+console.log(invertir2(arreglo));
 
 
 // 4. Escribe una función que reciba una cadena de texto y regrese una nueva con la primer letra de cada palabra en mayúscula.
