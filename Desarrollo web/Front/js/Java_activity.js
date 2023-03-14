@@ -15,7 +15,7 @@ function PrimerCaracter(texto){
     }
     for (let j=0; j < string_length; j++){
         if (dixi[texto[j]]==1){
-            console.log(texto[j]);
+            console.log("Función 1: \n"+ texto[j]);
         }
     }
     return;
@@ -41,14 +41,14 @@ function bubblesort(bubble){
     }}
     //EL siguiente for imprime la cadena bubble ya acomodada
     for(let i=0; i<longitud;i++){
-        console.log(bubble[i]);
+        console.log("Función 2: \n"+ bubble[i]);
     }
 }
 (bubblesort(bubble));
 
 // 3. Escribe dos funciones: la primera que invierta un arreglo de números y regrese un nuevo arreglo con el resultado; la segunda que modifique el mismo arreglo que se pasa como argumento. No se permite usar la función integrada 'reverse'.
- 
 let arreglo=[1,2,3,4,5,6,7];
+
 function invertir(arreglo){
     let nuevo=[];
     let array_length=arreglo.length;
@@ -59,25 +59,26 @@ function invertir(arreglo){
 
 }
 console.log("Función 3: ");
-console.log("implementacion uno: ", invertir(arreglo));
+let arreglo2 = invertir(arreglo);
+console.log("implementacion uno: \n", invertir(arreglo));
 
 
-function invertir2(arreglo){
-    let array_length = arreglo.length;
+function invertir2(arreglo2){
+    let array_length = arreglo2.length;
     let i = 0;
     let j = array_length -1;
     let temp;
     while (i < j){
-        temp = arreglo[i];
-        arreglo[i]=arreglo[j];
-        arreglo[j]=temp;
+        temp = arreglo2[i];
+        arreglo2[i]= arreglo2[j];
+        arreglo2[j]=temp;
         i++;
         j--;
     }
-    return arreglo;
+    return arreglo2;
 }
 
-console.log(invertir2(arreglo));
+console.log("Implementación dos:\n"+ invertir2(arreglo2));
 
 
 // 4. Escribe una función que reciba una cadena de texto y regrese una nueva con la primer letra de cada palabra en mayúscula.
@@ -92,7 +93,7 @@ function mayusculas(frase){
         separation[i] = separation[i].charAt(0).toUpperCase() + separation[i].slice(1);
     }
     let unir=separation.join(" ");
-    console.log(unir);
+    console.log("Función 4: \n"+ unir);
 }
 mayusculas(frase);
 
@@ -110,7 +111,7 @@ function mcd(num1, num2){
     return num2;
 }
 
-console.log(mcd(num1, num2));
+console.log("Función 5: \n"+ mcd(num1, num2));
 
 
 // 6. Crea una función que cambie una cadena de texto a 'Hacker Speak'. Por ejemplo, para la cadena 'Javascript es divertido', su hacker speak es: 'J4v45c1pt 35 d1v3rt1d0'.
@@ -142,7 +143,7 @@ let quote;
                 
             }}
         let unir=separation.join(" ");
-        console.log(unir);
+        console.log("Función 6: \n"+ unir);
 }
 
 hackerspeak(quote);
@@ -163,28 +164,30 @@ function factoriza(number){
     return factores;
 }
 
-console.log(factoriza(number));
+console.log("Función 7: \n"+ factoriza(number));
 
 // 8. Escribe una función que quite los elementos duplicados de un arreglo y regrese una lista con los elementos que quedan. Por ejemplo: quitaDuplicados([1, 0, 1, 1, 0, 0]) -> [1, 0]
 let arr=[1, 0, 1, 1, 0, 0];
-
 function duplicados(arr){
+    let dixi = {};
+    let nuevo=[];
     let array_length = arr.length;
-    let nodup=[];
-    let nono=[];
-    console.log(array_length);
-    for (let i=0; i < array_length; i++){
-        if (arr[i]){
-            nodup.push(arr[i]);
+    for (let j=0; j < array_length; j++){
+        if (dixi[arr[j]]){
+           dixi[arr[j]]++;
+
         }
         else{
-       
-        }
+            nuevo.push(arr[j]);
+            dixi[arr[j]] = 1;
 
+        }
+        
     }
    
+    return nuevo;
 }
-duplicados(arr);
+console.log("Función 8: \n "+duplicados(arr));
 // 9. Escribe una función que reciba como parámetro una lista de cadenas de texto, y regrese la longitud de la cadena más corta.
 
 let cadenas=["hola", "emilia", "jshejdjdje", "como estas hoy", "ji"];
@@ -197,7 +200,7 @@ function cadena_corta(cadenas){
             valores = cadenas[i].length;
         }
     }
-    console.log("La cadena más corta tiene una longitud de: ", valores)
+    console.log("Función 9: \n La cadena más corta tiene una longitud de: "+ valores)
     return;
   
 }
@@ -218,7 +221,7 @@ function palindromo(palind) {
         return;
       }
     }
-    console.log(palind, ":es palíndromo");
+    console.log("Función 10: \n "+ palind, ":es palíndromo");
     return;
   }
 palindromo(palind);
@@ -229,10 +232,11 @@ function sortStrings(strings) {
   }
   const unsortedArray = ["emo", "fer", "asha", "lu"];
   const sortedArray = sortStrings(unsortedArray);
-  console.log(sortedArray);
+  console.log("Función 11: \n "+ sortedArray);
 
 //12. Escribe una función que escriba una lista de numeros y devuelva la mediana y la moda
 let lista;
+console.log("Función 12 : ");
 lista=[1,2,3,4,4,7,8,8,9,10];
 function medianamoda(lista){
     let longitud;
@@ -271,6 +275,7 @@ function medianamoda(lista){
     }
     console.log("La moda es",moda);
 }
+medianamoda(lista)
 
 //13.Escribe una función que tome una lista de cadenas de texto y devuelva la cadena más frecuente.
 function mostFrequentString(list) {
@@ -301,7 +306,7 @@ function mostFrequentString(list) {
   
   const stringList = ['emo', 'emo', 'fer', 'fer', 'lu', 'lu', 'lu'];
   const frequentString = mostFrequentString(stringList);
-  console.log(frequentString);
+  console.log("Función 13: \n  "+frequentString);
 
 
 
@@ -321,6 +326,7 @@ function PowerofTwo(n){
         return false;   
 }
 let n=64;
+console.log("Función 14 :");
 if (PowerofTwo(n)==true)
     console.log("True \n");
 else
@@ -345,6 +351,6 @@ function Desencing (Mylist){
 }
 let Mylist =[1,23,99,33,12];
 Desencing(Mylist);
-console.log(Mylist);
+console.log("Función 15: \n  "+ Mylist);
 
 
