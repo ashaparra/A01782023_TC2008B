@@ -197,9 +197,9 @@
         <p id="nombreCompleto"></p>
         <script>
             function mostrarNombreCompleto() { // Definición de la función mostrarNombreCompleto()
-                var firstName = document.getElementById("form-fname").value; // Obteniendo el valor ingresado en la caja de texto del nombre
-                var lastName = document.getElementById("form-lname").value; // Obteniendo el valor ingresado en la caja de texto del apellido
-                var nombreCompleto = firstName + " " + lastName; // Concatenando el nombre y el apellido para obtener el nombre completo
+                let firstName = document.getElementById("form-fname").value; // Obteniendo el valor ingresado en la caja de texto del nombre
+                let lastName = document.getElementById("form-lname").value; // Obteniendo el valor ingresado en la caja de texto del apellido
+                let nombreCompleto = firstName + " " + lastName; // Concatenando el nombre y el apellido para obtener el nombre completo
                 document.getElementById("nombreCompleto").innerHTML = "Nombre completo: " + nombreCompleto; // Agregando el elemento de párrafo al formulario
             } 
         </script>   
@@ -222,15 +222,15 @@
        
        <script>
             //Obtener tabla por su id
-            var table = document.getElementById("sampleTable");
+            let table = document.getElementById("sampleTable");
             
             //Añadir evento onclick al botón para insertar fila
             document.getElementById("btn-insert-r").onclick = function() {
                 //Insertar nueva fila en la última posición
-                var newRow = table.insertRow(-1);
+                let newRow = table.insertRow(-1);
                 //Agregar dos celdas a la nueva fila
-                var cell1 = newRow.insertCell(0);
-                var cell2 = newRow.insertCell(1);
+                let cell1 = newRow.insertCell(0);
+                let cell2 = newRow.insertCell(1);
                 //Agregar texto a las celdas
                 cell1.innerHTML = "New row, column 1";
                 cell2.innerHTML = "New row, column 2";
@@ -239,9 +239,9 @@
             //Añadir evento onclick al botón para insertar columna
             document.getElementById("btn-insert-c").onclick = function() {
                 //Recorrer cada fila de la tabla
-                for(var i = 0; i < table.rows.length; i++) {
+                for(let i = 0; i < table.rows.length; i++) {
                     //Insertar nueva celda al final de la fila
-                    var cell = table.rows[i].insertCell(-1);
+                    let cell = table.rows[i].insertCell(-1);
                     //Agregar texto a la nueva celda
                     cell.innerHTML = "New column";
                 }
@@ -257,17 +257,17 @@
         <script>
             window.onload = function() {
                 // obtener la referencia del botón
-                var btn = document.getElementById("btn-change");
+                let btn = document.getElementById("btn-change");
         // agregar un listener al botón
         btn.addEventListener("click", function() {
             // obtener los valores de las cajas de input
-            var rowIndex = document.getElementById("rowIndex").value;
-            var colIndex = document.getElementById("colIndex").value;
-            var newValue = document.getElementById("Text").value;
+            let rowIndex = document.getElementById("rowIndex").value;
+            let colIndex = document.getElementById("colIndex").value;
+            let newValue = document.getElementById("Text").value;
             // obtener la tabla y el contenido de la celda especificada
-            var table = document.getElementById("myTable");
-            var row = table.rows[rowIndex];
-            var cell = row.cells[colIndex];
+            let table = document.getElementById("myTable");
+            let row = table.rows[rowIndex];
+            let cell = row.cells[colIndex];
 
             // actualizar el contenido de la celda especificada
             cell.innerHTML = newValue;
