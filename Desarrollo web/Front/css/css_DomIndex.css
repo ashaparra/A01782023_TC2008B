@@ -3,6 +3,9 @@ h6{
     font-weight:bold;
     font-size:medium;
 }
+h4{
+    background-color: rgb(235, 182, 200);
+}
 .Valid{
 color:rgb(76, 106, 31);
 font-style:italic;
