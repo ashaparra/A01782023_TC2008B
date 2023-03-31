@@ -1,0 +1,36 @@
+h6{
+    color:palevioletred;
+    font-weight:bold;
+    font-size:medium;
+}
+.Valid{
+color:rgb(76, 106, 31);
+font-style:italic;
+}
+a:link {
+    color:rgb(76, 106, 31);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color:rgb(76, 106, 31);
+    background-color:rgb(201, 214, 182);
+    text-decoration: underline;
+  }
+  a:visited{
+    color:rgb(76, 106, 31);
+    background-color: transparent;
+    text-decoration: none;
+  }
+#mousePosition{
+    color:palevioletred;
+    font-style:italic;
+}
+#nombreCompleto{
+    color:palevioletred;
+    font-style:italic;
+}
+#newValue{
+    color:palevioletred;
+    font-style:italic;
+}

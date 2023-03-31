@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link type="text/css" rel="stylesheet" href="../css/eventos_dom.css">
     <script type="module" src="../js/eventos_dom.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/css_DomIndex.css">
     <title>Eventos y Dom</title>
 </head>
 
@@ -21,14 +22,143 @@
         <h3>Preguntas</h3>
         <ol>
             <li>¿Qué es el DOM?</li>
+            <h6>ChatGPT</h6>
+            <P>El DOM, o Document Object Model (Modelo de Objeto de Documento), es una representación en memoria de un documento HTML (o XML) que permite la interacción dinámica con el contenido del documento y su presentación visual en un navegador web.
+
+                El DOM se organiza como un árbol de nodos, donde cada nodo representa un elemento, un atributo o un texto en el documento. Los nodos se conectan entre sí en una jerarquía que sigue la estructura del documento.
+                
+                A través del DOM, se puede acceder y manipular dinámicamente el contenido y la estructura del documento HTML, como agregar, eliminar o modificar elementos y atributos, cambiar el estilo de los elementos y realizar acciones en respuesta a eventos del usuario.
+                
+                El DOM es una parte fundamental de la tecnología web y es utilizado en conjunto con lenguajes de programación como JavaScript para crear aplicaciones web interactivas y dinámicas.</P>
+            
+                <p class="Valid">De acuerdo a las fuentes consultadas, la información dada por chatgpt es correcta. Sin ebargo, su respuesta va más allá de que es un DOM y mienciona qué es un nodo <br> <b>Fuente:</b> MDN web docs(2023). Document Object Model (DOM). Retrieved from <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model">https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model</a></p>
+
+            <h6>Copilot</h6>
+            <p>DOM es la abreviatura de Document Object Model, y es una interfaz de programación de aplicaciones que permite a los programadores acceder y manipular el contenido, estructura y estilo de un documento HTML.</p>
+        
+            <p class="Valid">De acuerdo a MDN web docs, en el articulo ¿qué es el DOM?, la información dada por copilot es correcta.Sin embargo, podría ser más completa si se mencionara su uso.<br> <b>Fuente:</b> MDN web docs(2023). Modelo de Objetos del Documento (DOM). Retrieved from <a href="https://developer.mozilla.org/es/docs/Web/API/Document_Object_Model/Introduction">https://developer.mozilla.org/es/docs/Web/API/Document_Object_Model/Introduction</a></p>
+            
             <li>¿Qué es un nodo?</li>
+            <h6>ChatGPT</h6>
+            <p>En el contexto del DOM, un nodo es un objeto que representa un elemento, un atributo o un texto en un documento HTML (o XML).
+
+                Los nodos son los elementos básicos de la estructura del árbol del DOM y están organizados en una jerarquía. Cada nodo tiene un tipo, como elemento, atributo o texto, y puede tener atributos, hijos y padres.
+                
+                Los nodos de elemento representan las etiquetas HTML y los nodos de texto representan el contenido textual dentro de los elementos. Los nodos de atributo representan los atributos de los elementos.
+                
+                Los nodos pueden ser accedidos y manipulados a través de JavaScript utilizando las propiedades y métodos del DOM. Por ejemplo, se puede acceder a un nodo de elemento utilizando su etiqueta, como document.getElementsByTagName("div"), o se puede acceder a un nodo de atributo utilizando su nombre, como element.getAttribute("src").</p>
+                <p class="Valid">La información dada por ChatGPT es correcta. La información dada además es muy completa pues se mencionan los tipos de nodos y hasta información acerca de cómo acceder a ellos.<br> <b>Fuente:</b> MDN web docs(2023).Node. Retrieved from <a href="https://developer.mozilla.org/en-US/docs/Web/API/Node">https://developer.mozilla.org/en-US/docs/Web/API/Node</a> y W3Schools. (n.d.). HTML DOM Nodes. W3Schools Online Web Tutorials. <a href="https://www.w3schools.com/js/js_htmldom_nodes.asp">https://www.w3schools.com/js/js_htmldom_nodes.asp</a></p>
+                
+                <h6>Copilot</h6>
+                <p>Un nodo es un objeto que representa un elemento del documento HTML. Por ejemplo, un nodo puede ser un elemento, un atributo, un texto, un comentario, etc.</p>
+                <p class="Valid">La información dada por copilot es correcta. Sin embargo, los nodos no solo puede representar elementos, sino también atribuntos o textos.<br> <b>Fuente:</b> MDN web docs(2023).Node.Retrieved from <a href="https://developer.mozilla.org/en-US/docs/Web/API/Node">https://developer.mozilla.org/en-US/docs/Web/API/Node</a></p>
+
             <li>¿Cómo se accede a un elemento del DOM?</li>
+            <h6>ChatGPT</h6>
+            
+            <p>Existen varios métodos para acceder a los elementos del DOM. Algunos de los métodos más comunes son:<br>
+                1. getElementById(): Este método devuelve el elemento que tiene el atributo de identificación (ID) especificado.<br>
+                2. getElementsByClassName(): Este método devuelve una colección de elementos que tienen la clase especificada. <br>
+                3.getElementsByTagName(): Este método devuelve una colección de elementos con el nombre de etiqueta HTML especificado. <br>
+                Una vez que se tiene una referencia al elemento, se puede manipular su contenido, atributos y estilo utilizando JavaScript. 
+            <p class="Valid">La información es correcta pues esá sustentada en los métodos mencionados por w3schools. Donde, según la fuente, los métodos son actiones que se pueden realizar en los elementos HTML <br>
+            <b>Fuente:</b>Mozilla Contributors. (2021, March 24). Document Object Model (DOM). MDN Web Docs. Retrieved from <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model">https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model</a></p>
+                
+            <h6>Copilot</h6>
+            <p>Para acceder a un elemento del DOM, se utiliza el método getElementById, que recibe como parámetro el id del elemento que se quiere acceder.</p>
+            <p class="Valid"> La información es correcta, pues según w3schools, getElementById es el método más común para acceder a un elemento en HTML <br>
+            <b>Fuente:</b> W3Schools. (n.d.). HTML DOM Methods. W3Schools Online Web Tutorials. Retrieved from <a href="https://www.w3schools.com/js/js_htmldom_methods.asp">https://www.w3schools.com/js/js_htmldom_methods.asp</a></p>
+
             <li>¿Cómo se modifica un elemento del DOM?</li>
+            <h6>ChatGPT</h6>
+            <P>Para modificar un elemento del DOM (Document Object Model) utilizando JavaScript, se pueden utilizar varias propiedades y métodos proporcionados por el lenguaje. Algunas de las formas más comunes de modificar un elemento del DOM son:<br>
+                 1. Cambiar el contenido de un elemento: Se puede utilizar la propiedad innerHTML para cambiar el contenido de un elemento.<br>
+                 2. Cambiar los atributos de un elemento: Se pueden utilizar las propiedades del objeto que representan el elemento para modificar sus atributos. <br>
+                 3. Cambiar el estilo de un elemento: Se pueden utilizar las propiedades del objeto style para modificar el estilo de un elemento. <br>
+                 4. Añadir o eliminar clases de un elemento: Se pueden utilizar las propiedades classList.add() y classList.remove() para añadir o eliminar clases de un elemento.</P>
+           <p class="Valid">La información es correcta, pues es sustentada en las propiedades y métodos mencionados por w3schools y por MND <br>
+            <b>Fuentes:</b> Mozilla Contributors. (2021, March 24). Document Object Model (DOM). MDN Web Docs. Retrieved from <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model">https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model</a> y
+                 W3Schools. (n.d.). HTML DOM Methods. W3Schools Online Web Tutorials. Retrieved from <a href="https://www.w3schools.com/js/js_htmldom_methods.asp">https://www.w3schools.com/js/js_htmldom_methods.asp</a> </p>
+                 <h6>Copilot</h6>
+            <P>Para modificar un elemento del DOM, se utiliza el método innerHTML, que recibe como parámetro el nuevo contenido que se quiere asignar al elemento.</P>
+            <p class="Valid">La información es correcta, pues según w3schools, innerHTML es el método más común para modificar un elemento en HTML. Sin embargo, sólo se menciona cómo modificar el contenido de un elemento, no otros factores  como el estilo<br>
+            <b>Fuente:</b>HTML DOM Methods. W3Schools Online Web Tutorials . Retrieved from <a href="https://www.w3schools.com/js/js_htmldom_methods.asp">https://www.w3schools.com/js/js_htmldom_methods.asp</a> </p>
+
             <li>¿Cuál es la diferencia entre getElementby* y querySelector*?</li>
-            <li>¿Qué es un evento?</li>
+            <h6>ChatGPT</h6>
+            <p>Tanto getElementBy* como querySelector* son métodos utilizados para acceder a elementos del DOM en JavaScript. Sin embargo, existen algunas diferencias importantes entre ellos:
+
+                1. Selección de elementos: getElementBy* se utiliza para seleccionar elementos según su etiqueta, nombre o clase, mientras que querySelector* permite seleccionar elementos utilizando selectores CSS. <br>
+                
+                2. Soporte para selectores CSS: querySelector* es compatible con selectores CSS, lo que significa que se pueden seleccionar elementos utilizando una amplia variedad de combinaciones y criterios, lo que proporciona más flexibilidad y poder de selección que getElementBy*. <br>
+                
+                3. Acceso a un solo elemento: querySelector* siempre devuelve solo el primer elemento que coincide con el selector, mientras que getElementBy* devuelve una lista de elementos que coinciden con el criterio de selección. Es necesario acceder a un elemento específico de la lista para manipularlo. <br>
+                
+                4. Rendimiento: getElementBy* es generalmente más rápido que querySelector* porque no tiene que hacer una interpretación completa de un selector CSS y realizar una búsqueda en todo el documento.<br>
+                
+                En general, se recomienda utilizar querySelector* para la mayoría de las operaciones de selección de elementos en JavaScript debido a su mayor flexibilidad y potencia de selección. Sin embargo, si se sabe que solo hay un elemento que coincidirá con un selector determinado, puede ser más rápido utilizar getElementBy*.</p>
+                <p class="Valid">La información es correcta, pues es sustentada en las diferencias mencionadas por w3schools y por MND <br>
+                <b>Fuente:</b>Mozilla Contributors. (2021, January 18). Document.querySelector(). MDN Web Docs. Retrieved from <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector">https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector</a> y W3Schools. (n.d.). HTML DOM getElementById() Method. W3Schools Online Web Tutorials. <a href="https://www.w3schools.com/jsref/met_doc_getelementbyid.asp">https://www.w3schools.com/jsref/met_doc_getelementbyid.asp</a></p>
+            
+                <h6>Copilot</h6>
+            <p>La diferencia es que getElementby* devuelve un arreglo con todos los elementos que coincidan con el criterio de búsqueda, mientras que querySelector* devuelve el primer elemento que coincida con el criterio de búsqueda.</p>
+            <p class="Valid">La información es parcialmente correcta. Pues, aunque la diferencia principal de getElementBy y querySelector es lo que devuelve, getElementby* no  devuelve un arreglo. Devuelve una colección HTML llamada HTMLCollection. Según w3,HTMLCollection es similar a una matriz (array) en términos de su capacidad para acceder a los elementos por índice, pero no es un objeto de matriz real.<br>
+                <b>Fuente:</b>W3C. (2003). Document Object Model (DOM) Level 2 HTML Specification - HTMLCollection Interface. W3C. Retrieved from <a href="https://www.w3.org/TR/DOM-Level-2-HTML/html.html#ID-75708506">https://www.w3.org/TR/DOM-Level-2-HTML/html.html#ID-75708506"</a></p>
+            
+                <li>¿Qué es un evento?</li>
+            <h6>ChatGPT</h6>
+            <p>En el contexto del DOM, un evento es una acción que ocurre en el navegador, como hacer clic en un botón, mover el cursor del mouse, presionar una tecla, cargar una página web, etc. El DOM puede detectar estos eventos y manejarlos con código JavaScript.
+
+                Los eventos son importantes para hacer que una página web sea interactiva y receptiva a las acciones del usuario. Cuando se produce un evento, el navegador crea un objeto de evento que contiene información sobre el evento, como el tipo de evento, la posición del cursor del mouse, la tecla que se ha presionado, etc. Este objeto se puede utilizar para realizar acciones específicas en respuesta al evento, como cambiar el contenido de una página web, enviar datos a un servidor, mostrar una ventana emergente, etc.
+                
+                En resumen, un evento en el contexto del DOM es una acción que ocurre en el navegador y que puede ser detectada y manejada por JavaScript para realizar acciones específicas en respuesta a ella.</p>
+                <p class="Valid">La información es correcta ya que la definición de evento dada por chatgpt es la misma que la que se encuentra en fuentes como MDN y W3Schools <br>
+                    <b>Fuente:</b>MDN Web Docs. (s.f.). Introduction to events. Retrieved from <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events">https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events</a></p>
+            
+            <h6>Copilot</h6>
+            <p>Un evento es una acción que sucede en el navegador, como por ejemplo, hacer clic en un botón, escribir en un campo de texto, etc</p>
+            <p class="Valid">La información es correcta, pues es la definición dada es muy smiliar a la encontrada en W3Schools. Con la diferencia de que en W3Schools se especifica que la acción se produce con ayuda de JavaScript.<br>
+                <b>Fuente:</b>W3Schools. (s.f.). What is an Event?. Retrieved from <a href="https://www.w3schools.com/js/js_events.asp">https://www.w3schools.com/js/js_events.asp</a></p>
+            
             <li>¿Qué es un listener?</li>
+            <h6>ChatGPT</h6>
+            <p>Un listener en el contexto del DOM es una función de JavaScript que se utiliza para detectar y responder a eventos en una página web. Se añade a un elemento del DOM y espera a que ocurra un evento específico, como hacer clic en un botón o mover el cursor del ratón, para ejecutar una función específica.</p>
+            <p class="Valid">La respuesta dada por ChatGPT, es silimar a la encontrada en MDN "Introduction to events". Por esto, se puede concluir que la respuesta es correcta <br>
+            <b>Fuente:</b>MDN Web Docs. (s.f.). Introduction to events. Retrieved from <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events">https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events</a></p>
+            
+            <h6>Copilot</h6>
+            <p>Un listener es una función que se ejecuta cuando sucede un evento</p>
+            <p class="Valid">La respuesta es correcta y es muy similiar a la dada por w3schools. <br>
+            <b>Fuente:</b>W3Schools.(s.f.). Event listeners. Retrieved from <a href="https://www.w3schools.com/js/js_htmldom_eventlistener.asp">https://www.w3schools.com/js/js_htmldom_eventlistener.asp</a></p>
+            
             <li>¿Qué es un callback?</li>
+            <h6>ChatGPT</h6>
+            <p> Un callback en el contexto del DOM es una función que se pasa como argumento a otra función y se ejecuta en respuesta a un evento específico en un elemento del DOM. Los callbacks son una forma común de manejar eventos en JavaScript y en el DOM, y son especialmente útiles para manejar eventos asíncronos, como las solicitudes a servidores.</p>
+            <p class="Valid">La respuesta es correcta, pues según lo investigado, el elemento clave de callback es que es una función que se pasa como argumento a otra función. <br>
+            <b>Fuente:</b> W3Schools. (n.d.). JavaScript Callback Functions. Retrieved from <a href="https://www.w3schools.com/js/js_callback.asp">https://www.w3schools.com/js/js_callback.asp</a></p>
+
+
+            <h6>Copilot</h6>
+            <p>Un callback es una función que se pasa como parámetro a otra función.</p>
+            <p class="Valid">La respuesta es correcta, pues la definicón es la misma que se ecuentra en w3schools <br>
+            <b>Fuente:</b> W3Schools. (n.d.). JavaScript Callback Functions. Retrieved from <a href="https://www.w3schools.com/js/js_callback.asp">https://www.w3schools.com/js/js_callback.asp</a></p>
+
             <li>¿Qué es un objeto de evento?</li>
+            <h6>ChatGPT</h6>
+            <p>En el contexto del DOM, un objeto de evento es un objeto que contiene información sobre un evento que se ha producido en un elemento HTML. Cuando se produce un evento en un elemento, se crea un objeto de evento que contiene información sobre el evento, como el tipo de evento, el elemento en el que se produjo el evento, la posición del puntero del mouse, las teclas del teclado presionadas, etc.
+
+                El objeto de evento se puede utilizar en una función de callback para acceder a la información sobre el evento y tomar decisiones basadas en esta información. Por ejemplo, si se está manejando un evento de clic en un elemento, se puede utilizar el objeto de evento para determinar en qué posición del elemento se hizo clic y, en consecuencia, realizar una acción específica.
+                
+                El objeto de evento se puede acceder en una función de callback utilizando el parámetro "event" que se pasa a la función. </p>
+                <p class="Valid">La respuesta es correcta pues según la docuemntación de JavaScript Kit, el objeto de eventos auda a mantener un seguimiento de los eventos que ocurren en la página. Esto, se asemeja a grandes rasgos a lo dado por chatgpt <br>
+                <b>Fuente:</b> JavaScript Kit. (n.d.). DOM Event Object. Retrieved from <a href="http://www.javascriptkit.com/domref/domevent.shtml#:~:text=The%20Event%20object%20keeps%20tracks,webmaster)%20to%20react%20to%20them">http://www.javascriptkit.com/domref/domevent.shtml#:~:text=The%20Event%20object%20keeps%20tracks,webmaster)%20to%20react%20to%20them</a>.</p>
+
+
+            <h6>Copilot</h6>
+            <p>Un objeto de evento es un objeto que contiene información sobre el evento que se ha producido</p>
+            <p class="Valid">La respuesta es correcta, pues según documentación de IMB, un objeto de evento es "una ocurrencia de la data que es pasada en un evento" <br>
+            <b>Fuente:</b>IBM.(n.d.). Event objects. IBM Knowledge Center. Retrieved from <a href="https://www.ibm.com/docs/en/odm/8.8.1?topic=applications-event-objects#:~:text=An%20event%20object%20is%20an,instance%20of%20a%20single%20object">https://www.ibm.com/docs/en/odm/8.8.1?topic=applications-event-objects#:~:text=An%20event%20object%20is%20an,instance%20of%20a%20single%20object</a></p>
+
         </ol>        
     </div>
 
@@ -37,16 +167,41 @@
 
     <div class="container">
         <p>1. Modifica el siguiente elemento para mostrar la posición del mouse en el documento:</p>
+        
         <p id="mousePosition">Posición del mouse: </p>
+<script>
+    // obtener el elemento con el id "mousePosition"
+    const mousePosition = document.getElementById('mousePosition');
+
+    // agregar un listener para detectar el movimiento del mouse
+    document.addEventListener('mousemove', event => {
+        // obtener la posición del mouse
+        const x = event.clientX;
+        const y = event.clientY;
+
+        // actualizar el texto del elemento con la posición del mouse
+        mousePosition.textContent = `Posición del mouse: (${x}, ${y})`;
+    });
+</script>
     </div>
 
     <div class="container">
         <p>2. Al dar click al siguiente botón, obtén el nombre y apellido de las siguientes cajas de texto, y agrega, después del botón, un elemento que tenga el nombre completo.</p>
+    
         <form id="form1">
-            First name: <input id="form-fname" type="text" name="fname" ><br>
-            Last name: <input id="form-lname" type="text" name="lname" ><br><br>
-        <input id="form1-submit" type="submit" value="Submit">
+            First name: <input id="form-fname" type="text" name="fname" ><br> <!-- Caja de texto para ingresar el nombre -->
+            Last name: <input id="form-lname" type="text" name="lname" ><br><br> <!-- Caja de texto para ingresar el apellido -->
+            <input id="form1-submit" type="button" value="Submit" onclick="mostrarNombreCompleto()"> <!-- Botón que llama a la función mostrarNombreCompleto() cuando se hace clic -->
         </form>
+        <p id="nombreCompleto"></p>
+        <script>
+            function mostrarNombreCompleto() { // Definición de la función mostrarNombreCompleto()
+                var firstName = document.getElementById("form-fname").value; // Obteniendo el valor ingresado en la caja de texto del nombre
+                var lastName = document.getElementById("form-lname").value; // Obteniendo el valor ingresado en la caja de texto del apellido
+                var nombreCompleto = firstName + " " + lastName; // Concatenando el nombre y el apellido para obtener el nombre completo
+                document.getElementById("nombreCompleto").innerHTML = "Nombre completo: " + nombreCompleto; // Agregando el elemento de párrafo al formulario
+            } 
+        </script>   
     </div>
 
     <div class="container">
@@ -63,10 +218,62 @@
         </table><br>
         <input id="btn-insert-r" type="button" value="Insert row">
         <input id="btn-insert-c" type="button" value="Insert column">
+       
+       <script>
+            //Obtener tabla por su id
+            var table = document.getElementById("sampleTable");
+            
+            //Añadir evento onclick al botón para insertar fila
+            document.getElementById("btn-insert-r").onclick = function() {
+                //Insertar nueva fila en la última posición
+                var newRow = table.insertRow(-1);
+                //Agregar dos celdas a la nueva fila
+                var cell1 = newRow.insertCell(0);
+                var cell2 = newRow.insertCell(1);
+                //Agregar texto a las celdas
+                cell1.innerHTML = "New row, column 1";
+                cell2.innerHTML = "New row, column 2";
+            };
+            
+            //Añadir evento onclick al botón para insertar columna
+            document.getElementById("btn-insert-c").onclick = function() {
+                //Recorrer cada fila de la tabla
+                for(var i = 0; i < table.rows.length; i++) {
+                    //Insertar nueva celda al final de la fila
+                    var cell = table.rows[i].insertCell(-1);
+                    //Agregar texto a la nueva celda
+                    cell.innerHTML = "New column";
+                }
+            };
+        </script>
+        
+
+
     </div>
 
     <div class="container">
         <p>4. Incluye dos cajas de input, para solicitar al usuario la posición de la fila y columna de la siguiente tabla, y otra para solicitar un texto. Al apretar el botón, actualiza el contenido de esa tabla en la posición que solicitaste, con la cadena de texto que solicitaste.</p>
+        <script>
+            window.onload = function() {
+                // obtener la referencia del botón
+                var btn = document.getElementById("btn-change");
+        // agregar un listener al botón
+        btn.addEventListener("click", function() {
+            // obtener los valores de las cajas de input
+            var rowIndex = document.getElementById("rowIndex").value;
+            var colIndex = document.getElementById("colIndex").value;
+            var newValue = document.getElementById("Text").value;
+            // obtener la tabla y el contenido de la celda especificada
+            var table = document.getElementById("myTable");
+            var row = table.rows[rowIndex];
+            var cell = row.cells[colIndex];
+
+            // actualizar el contenido de la celda especificada
+            cell.innerHTML = newValue;
+        });
+    }
+</script>
+
         <table id="myTable">
             <tr>
                 <td>Row1 cell1</td>
@@ -88,31 +295,100 @@
             <input id="colIndex" type="text" placeholder="Col Index">
             <input id="newValue" type="text" placeholder="New Value">
             <input id="btn-change" type="button" value="Change content">
+            </form>
     </div>
 
     <div class="container">
         <p>5. Agrega el código para quitar o agregar elementos a la lista de opciones. Los colores pueden ser aleatorios.</p>
-        <form>
-            <select id="colorSelect">
-                <option>Red</option>
-                <option>Green</option>
-                <option>White</option>
-                <option>Black</option>
-            </select>
-            <input id="btn-add-color" type="button" value="Add color">
-            <input id="btn-rmv-color" type="button" value="Remove color">
-        </form>
-    </div>
+        <!-- Se define un select con algunas opciones de colores predefinidas -->
+<form>
+    <select id="colorSelect">
+        <option>Red</option>
+        <option>Green</option>
+        <option>White</option>
+        <option>Black</option>
+    </select>
+    <!-- Botón para agregar un color a la lista -->
+    <input id="btn-add-color" type="button" value="Add color">
+    <!-- Botón para remover el color seleccionado de la lista -->
+    <input id="btn-rmv-color" type="button" value="Remove color">
+</form>
+
+<script>
+    // Se obtienen los elementos del DOM correspondientes
+    const select = document.getElementById("colorSelect");
+    const addBtn = document.getElementById("btn-add-color");
+    const rmvBtn = document.getElementById("btn-rmv-color");
+
+    // Función que agrega un nuevo color a la lista
+    function addColor() {
+        // Se genera un color aleatorio en formato hexadecimal
+        const color = '#' + Math.floor(Math.random()*16777215).toString(16);
+        // Se crea un nuevo elemento option con el color generado
+        const newOption = document.createElement("option");
+        newOption.textContent = color;
+        // Se agrega el nuevo elemento a la lista
+        select.add(newOption);
+    }
+
+    // Función que remueve el color seleccionado de la lista
+    function removeColor() {
+        // Se obtiene el índice del color seleccionado
+        const selectedIndex = select.selectedIndex;
+        // Si hay algún elemento seleccionado
+        if (selectedIndex >= 0) {
+            // Se remueve el elemento correspondiente al índice seleccionado
+            select.remove(selectedIndex);
+        }
+    }
+
+    // Se agrega un event listener al botón de agregar color
+    addBtn.addEventListener("click", addColor);
+
+    // Se agrega un event listener al botón de remover color
+    rmvBtn.addEventListener("click", removeColor);
+</script>
+
 
     <div class="container">
         <p>6. Al poner el mouse encima de la siguiente imagen, genera dos números aleatorios entre 300 y 600 para el width y height de una imagen. Reemplaza la imagen de placeholder por otra similar con el tamaño random que generaste. El evento solo se dispara cuando el mouse entra en la imagen.</p>
-        <img id="imagenGato" src="http://placekitten.com/200/300">
-    </div>
+        <!-- imagen de placeholder -->
+<img id="imagenGato" src="http://placekitten.com/200/300">
 
+<script>
+// Seleccionamos la imagen
+const imagen = document.getElementById("imagenGato");
+
+// Función para generar un número aleatorio entre un rango dado
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+
+// Función para cambiar el tamaño de la imagen y actualizar la fuente
+function cambiarImagen() {
+  // Generamos dos números aleatorios entre 300 y 600
+  const width = getRndInteger(300, 600);
+  const height = getRndInteger(300, 600);
+
+  // Actualizamos el tamaño de la imagen
+  imagen.style.width = `${width}px`;
+  imagen.style.height = `${height}px`;
+
+  // Generamos una nueva fuente con el tamaño actualizado
+  const nuevaFuente = `http://placekitten.com/${width}/${height}`;
+
+  // Reemplazamos la imagen de placeholder por la nueva imagen con el tamaño random
+  imagen.src = nuevaFuente;
+}
+
+// Añadimos un event listener para el evento "mouseover" (cuando el mouse entra en la imagen)
+imagen.addEventListener("mouseover", cambiarImagen);
+</script>
     <div class="container">
         <h2>Conclusiones</h2>
 
         <h4>Experiencia general</h4>
+        
         <h4>¿Cuándo y para qué usarías ChatGPT y cuándo Copilot?</h4>
         <h4>Ventajas de usar AI para programar</h4>
         <h4>Desventajas de usar AI para programar</h4>
